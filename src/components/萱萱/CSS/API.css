@@ -1,0 +1,224 @@
+img {
+    /* width: 150px; */
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: #fff 1px solid !important;
+    background-color: #0000 !important;
+}
+
+.cardBox {
+    box-shadow: 3px 3px 8px rgb(206, 206, 206);
+}
+
+.card-body {
+    position: relative;
+    width: auto;
+    border-radius: 10px;
+}
+
+.itemName {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 0%;
+    background-color: darkolivegreen !important;
+    color: aliceblue !important;
+}
+
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    /* color: var(--bs-card-title-color); */
+    /* background-color: rgb(244, 215, 48); */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    color: #fff !important;
+    font-size: 20px;
+
+}
+
+.card-body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.card-text {
+    color: #fff;
+    font-size: 25px;
+}
+
+.itemText {
+    text-align: center;
+    /* margin-left: 0%; */
+}
+
+.itemPrice {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    border: 1px solid gold;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 0.15em 0.3em;
+    box-shadow: 3px 3px 8px rgb(206, 206, 206);
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.option {
+    background-color: #5d94a675
+}
+
+select option:checked,
+select option:hover {
+    /* box-shadow: 0 0 10px 100px #c27227 inset; */
+    background-color: rgb(148, 148, 148) !important;
+}
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+/* 
+.option[option]:hover{
+    background-color:darkgrey !important;
+}
+::-moz-selection { 
+  color: red;
+  background: yellow;
+}
+ 
+::selection {
+  color: red;
+  background: yellow;
+} */
+
+
+/*=========================================*/
+
+
+.clouds {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 270px;
+    position: sticky !important;
+  }
+  
+  .animation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+  }
+  .animation1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleY(-1);
+  }
+  /* linear-gradient(0deg, #fff, #0000, #fff); */
+  .animation::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #ffffff, #0000, #ffffff);;
+    z-index: 1;
+  
+  }
+  .animation1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #ffffff6d, #0000, #fff);;
+    z-index: 1;
+  
+  }
+  .animation1::after,.animation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background: #03a8f452;
+ 
+  }
+  
+  .animation1 .cloud,.animation .cloud {
+    background-repeat: repeat-X;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+  }
+  
+  .animation1 .cloud1,.animation .cloud1 {
+    background-image: url('https://raw.githubusercontent.com/gestok/clouds/main/clouds/clouds_1.png');
+    animation: move1 20s infinite linear;
+    
+  }
+  .animation1 .cloud2,.animation .cloud2 {
+    background-image: url('https://raw.githubusercontent.com/gestok/clouds/main/clouds/clouds_2.png');
+    animation: move1 15s infinite linear;
+  }
+  .animation1 .cloud3,.animation .cloud3 {
+    background-image: url('https://raw.githubusercontent.com/gestok/clouds/main/clouds/clouds_3.png');
+    animation: move1 17s infinite linear;
+  }
+  
+  @keyframes move1 {
+    100% {background-position: -1000px 0;}
+  }
+  @keyframes move2 {
+    100% {background-position: -1000px 0;}
+  }
+  @keyframes move3 {
+    100% {background-position: -1579px 0;}
+  }
+  
+  
+  .white::before {background: linear-gradient(0deg, #fff, #fff0, #fff)}
+  .white::after {background: #03a9f445;}
+  
+  .black::before {background: linear-gradient(0deg, #151515, #15151500, #151515)}
+  .black::after {background: #ff996630;}
+  
+  .lightblack::before {background: linear-gradient(0deg, #353535, #35353500, #353535)}
+  .lightblack::after {background: #00968875;}
+  
+  .cyan::before {background: linear-gradient(0deg, #b2ebf2 0%, #b2ebf200 38%, #b2ebf200 58%, #b2ebf2 100%)}
+  .cyan::after {background: #034070a0;}

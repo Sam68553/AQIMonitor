@@ -1,0 +1,42 @@
+/* App5.module.css */
+body {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 100vh;
+  font-family: sans-serif;
+  padding: 5rem;
+  color: rgb(88, 88, 88) !important;
+  background: linear-gradient(180deg, #F3E7E9 0%, #E3EEFF 99.00%, #E3EEFF 100%);
+}
+
+.select {
+  border-color: rgb(213, 157, 85);
+  border-radius: 5px;
+  background-color: antiquewhite;
+  color: rgb(88, 88, 88);
+  width: auto;
+  padding: 5px;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select:hover {
+  background-color: rgb(250, 225, 192);
+}
+
+.container {
+  display: flex;
+  width: 500px;
+}
+
+.card-1 {
+  flex: 1;
+  align-items: flex-start;
+}
+
+.card-2 {
+  flex: 2;
+}

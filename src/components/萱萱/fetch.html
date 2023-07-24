@@ -1,0 +1,21 @@
+<!-- 資料庫連接 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const testAPI =()=>{
+            // 發送GET請求
+            fetch('https://labapi.showu.com.tw/TestSrv/HelloWorld')
+            .then(response=>response.json())//解析回應為 JSON 物件
+            .then(data=>console.log(data))//處理回應的JSON 資料
+            .catch(error=>console.error('Error:',error));//處理錯誤，也可以寫為 console.log
+        }
+    </script>
+</head>
+<body>
+    <button onclick="testAPI()">取得SERVER資料</button>
+</body>
+</html>
